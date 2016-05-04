@@ -51,13 +51,9 @@ func main() {
 		results := r.FindAllStringSubmatch(bodyString, -1)
 
 		for _, result := range results {
-			// subMatches := r2.FindStringSubmatch(item)
-			fmt.Println("--")
-
 			if len(result) > 0 {
 				fmt.Println(result[1])
 			}
-
 		}
 	}
 	app.Run(os.Args)
